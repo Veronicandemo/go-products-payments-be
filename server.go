@@ -16,7 +16,7 @@ import (
 // there can only be one main package in a go application
 
 func main() {
-	stripe.Key = "sk_test_51QHhXYAWmcOf15e32XyRW9BvOvQjei1BxfJZINSQu1AT4w1UCfE7KDpKNdnTyyrmcKhY7tu6rwuGmtxspkpLihvj00sSep6P6p"
+	stripe.Key = ""
 
 	http.HandleFunc("/create-payment-intent", handleCreatePaymentIntent)
 	http.HandleFunc("/health", handleHealth)
